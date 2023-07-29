@@ -21,8 +21,6 @@ const HomePage = () => {
                 <title>
                     202-school | Home page
                 </title>
-                <link rel="apple-touch-icon" href="../../assets/images/Uzbekistan.png"/>
-                <link rel="icon" href="../../assets/images/Uzbekistan.png"/>
             </Helmet>
             <section className="intro">
                 <Header burger={burger} setBurger={setBurger}/>

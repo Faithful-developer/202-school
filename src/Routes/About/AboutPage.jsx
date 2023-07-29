@@ -15,6 +15,7 @@ import Student1  from '../../assets/images/student-1.jpeg'
 import Student2  from '../../assets/images/student-2.JPG'
 import Student3  from '../../assets/images/student-3.jpg'
 import Student4  from '../../assets/images/student-4.jpeg'
+import {Helmet} from "react-helmet";
 
 const AboutPage = () => {
     const [activeStaff, setActiveStaff] = useState(null);
@@ -90,6 +91,9 @@ const AboutPage = () => {
     ]
     return (
         <>
+            <Helmet>
+                <title>302-school | About</title>
+            </Helmet>
             <section className="intro-about">
                 <Header burger={burger} setBurger={setBurger}/>
                 <MobileHeader burger={burger}/>

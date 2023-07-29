@@ -3,6 +3,7 @@ import {useState} from "react";
 import Header from "../../containers/Header";
 import MobileHeader from "../../containers/MobileHeader";
 import Footer from "../../containers/Footer";
+import {Helmet} from 'react-helmet'
 
 const ContactPage = () => {
     const [burger, setBurger] = useState(false);
@@ -13,6 +14,9 @@ const ContactPage = () => {
     }
     return (
         <>
+            <Helmet>
+                <title>302-school | Contact</title>
+            </Helmet>
             <div className="intro-contact">
                 <Header burger={burger} setBurger={setBurger}/>
                 <MobileHeader burger={burger}/>
